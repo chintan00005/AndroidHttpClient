@@ -1,0 +1,5 @@
+  // Add this line inside of your onCreate of MainActivity / MainApplicationFile
+      
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+          OkHttpClientProvider.setOkHttpClientFactory(new CustomClientFactory());
+      }
